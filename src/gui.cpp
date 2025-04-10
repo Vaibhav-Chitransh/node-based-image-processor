@@ -17,9 +17,15 @@ ID3D11Device* g_pd3dDevice = nullptr;
 ID3D11DeviceContext* g_pd3dDeviceContext = nullptr;
 IDXGISwapChain* g_pSwapChain = nullptr;
 ID3D11RenderTargetView* g_mainRenderTargetView = nullptr;
-ID3D11ShaderResourceView* g_texture = nullptr;
-int g_imageWidth = 0, g_imageHeight = 0;
 HWND g_hWnd = nullptr;
+
+// Image Textures & Buffers
+ID3D11ShaderResourceView* g_texture = nullptr;
+ID3D11ShaderResourceView* g_processedTexture = nullptr;
+int g_imageWidth = 0, g_imageHeight = 0;
+cv::Mat original_image;
+cv::Mat processed_image;
+bool show_grayscale = false;
 
 // Helper Functions
 void CreateRenderTarget() {
@@ -68,24 +74,23 @@ bool CreateDeviceD3D(HWND hWnd) {
     return true;
 }
 
-bool LoadImageToTexture(const std::string& imagePath) {
-    cv::Mat image = cv::imread(imagePath, cv::IMREAD_UNCHANGED);
-    if (image.empty()) {
-        MessageBoxA(NULL, "Failed to load image", "Error", MB_OK | MB_ICONERROR);
-        return false;
-    }
+bool LoadImageToTexture(const cv::Mat& image, ID3D11ShaderResourceView** out_texture, int& width, int& height) {
+    if (image.empty()) return false;
 
-    g_imageWidth = image.cols;
-    g_imageHeight = image.rows;
+    width = image.cols;
+    height = image.rows;
 
+    cv::Mat rgba_image;
     if (image.channels() == 3)
-        cv::cvtColor(image, image, cv::COLOR_BGR2RGBA);
+        cv::cvtColor(image, rgba_image, cv::COLOR_BGR2RGBA);
     else if (image.channels() == 1)
-        cv::cvtColor(image, image, cv::COLOR_GRAY2RGBA);
+        cv::cvtColor(image, rgba_image, cv::COLOR_GRAY2RGBA);
+    else
+        rgba_image = image;
 
     D3D11_TEXTURE2D_DESC desc = {};
-    desc.Width = g_imageWidth;
-    desc.Height = g_imageHeight;
+    desc.Width = width;
+    desc.Height = height;
     desc.MipLevels = 1;
     desc.ArraySize = 1;
     desc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
@@ -94,14 +99,14 @@ bool LoadImageToTexture(const std::string& imagePath) {
     desc.BindFlags = D3D11_BIND_SHADER_RESOURCE;
 
     D3D11_SUBRESOURCE_DATA initData = {};
-    initData.pSysMem = image.data;
-    initData.SysMemPitch = image.cols * 4;
+    initData.pSysMem = rgba_image.data;
+    initData.SysMemPitch = rgba_image.cols * 4;
 
     ID3D11Texture2D* tex = nullptr;
     HRESULT hr = g_pd3dDevice->CreateTexture2D(&desc, &initData, &tex);
     if (FAILED(hr)) return false;
 
-    hr = g_pd3dDevice->CreateShaderResourceView(tex, nullptr, &g_texture);
+    hr = g_pd3dDevice->CreateShaderResourceView(tex, nullptr, out_texture);
     tex->Release();
 
     return SUCCEEDED(hr);
@@ -161,8 +166,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
     ImGui_ImplWin32_Init(g_hWnd);
     ImGui_ImplDX11_Init(g_pd3dDevice, g_pd3dDeviceContext);
 
-    // ✅ Load the image as a texture
-    LoadImageToTexture("../assets/test.jpg"); // <- make sure the image exists at this path
+    // Load the original image
+    original_image = cv::imread("../assets/test.jpg");
+    if (!original_image.empty()) {
+        LoadImageToTexture(original_image, &g_texture, g_imageWidth, g_imageHeight);
+    }
 
     // Main loop
     MSG msg;
@@ -178,13 +186,26 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
         ImGui_ImplWin32_NewFrame();
         ImGui::NewFrame();
 
+        // GUI Window
         ImGui::Begin("Welcome to Node-Based Image Editor!");
         ImGui::Text("This is a basic ImGui window.");
         ImGui::Button("Click Me!");
 
-        if (g_texture) {
+        ImGui::Separator();
+        ImGui::Checkbox("Apply Grayscale", &show_grayscale);
+
+        if (show_grayscale) {
+            cv::cvtColor(original_image, processed_image, cv::COLOR_BGR2GRAY);
+            LoadImageToTexture(processed_image, &g_processedTexture, g_imageWidth, g_imageHeight);
+        }
+
+        if (g_processedTexture && show_grayscale) {
             ImGui::Separator();
-            ImGui::Text("Loaded Image:");
+            ImGui::Text("Processed Image (Grayscale):");
+            ImGui::Image((ImTextureID)g_processedTexture, ImVec2((float)g_imageWidth, (float)g_imageHeight));
+        } else if (g_texture) {
+            ImGui::Separator();
+            ImGui::Text("Original Image:");
             ImGui::Image((ImTextureID)g_texture, ImVec2((float)g_imageWidth, (float)g_imageHeight));
         }
 

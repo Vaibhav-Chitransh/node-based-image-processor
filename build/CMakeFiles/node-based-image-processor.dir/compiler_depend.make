@@ -1012,6 +1012,260 @@ CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x8
 CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h"
 CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "D:\Github Repos\node-based-image-processor\libs\imgui\backends\imgui_impl_win32.h"
 CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "D:\Github Repos\node-based-image-processor\libs\imgui\backends\imgui_impl_dx11.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\opencv.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\opencv_modules.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cvdef.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\version.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\limits"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\yvals_core.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cfloat"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\climits"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cwchar"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cstdio"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\wchar.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wconio.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wdirect.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wio.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_share.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wprocess.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys\stat.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys\types.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\intrin0.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\isa_availability.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xstddef"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cstddef"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xtr1common"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cstdlib"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_math.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\initializer_list"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\hal\interface.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cv_cpu_dispatch.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\emmintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xmmintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\mmintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\malloc.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\intrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\setjmp.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\immintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\wmmintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\nmmintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\smmintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\tmmintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\pmmintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\zmmintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ammintrin.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cstdint"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\stdint.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\base.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\opencv_modules.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\algorithm"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xmemory"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\new"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\exception"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\yvals.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\crtdefs.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\use_ansi.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\type_traits"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\eh.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_terminate.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xatomic.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xutility"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cstring"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\utility"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cvstd.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cctype"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\string"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xstring"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\iosfwd"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xpolymorphic_allocator.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\tuple"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cmath"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cvstd_wrapper.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\memory"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\typeinfo"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\neon_utils.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\vsx_utils.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\check.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\base.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\traits.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\matx.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\saturate.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\fast_math.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\matx.inl.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\matx.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\types.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vector"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\mat.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\bufferpool.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\array"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\mat.inl.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\persistence.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\operations.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cvstd.inl.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\complex"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\sstream"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\istream"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ostream"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ios"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xlocnum"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\iterator"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\streambuf"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xiosbase"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\share.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\system_error"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\__msvc_system_error_abi.hpp"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cerrno"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\stdexcept"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xcall_once.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xerrc.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\atomic"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xthreads.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xtimec.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ctime"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\time.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xlocale"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xfacet"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xlocinfo"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xlocinfo.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\clocale"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\locale.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ymath.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\utility.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\functional"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\unordered_map"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xhash"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\list"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xbit_ops.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xnode_handle.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\mutex"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\__msvc_chrono.hpp"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ratio"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\thread"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\process.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_startup.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_startup.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\optim.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\ovx.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\calib3d.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\features2d.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\opencv_modules.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\miniflann.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\defines.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\config.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\affine.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\utils\logger.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\iostream"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\utils\logger.defines.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\utils\logtag.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\dnn.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\async.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\chrono"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\..\dnn\version.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\dict.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\map"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xtree"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\dnn.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\layer.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\dnn.inl.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\utils\inference_engine.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\utils\..\dnn.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\flann_base.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\general.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\matrix.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\params.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\any.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\saving.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\nn_index.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\result_set.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\set"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\all_indices.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\kdtree_index.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\dynamic_bitset.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\dist.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\heap.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\allocator.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\random.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\kdtree_single_index.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\kmeans_index.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\logger.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\composite_index.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\linear_index.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\hierarchical_clustering_index.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\lsh_index.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\lsh_table.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\iomanip"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xlocmon"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xloctime"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\autotuned_index.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\ground_truth.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\index_testing.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\timer.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\sampling.h
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\highgui.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\imgcodecs.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\videoio.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\imgproc.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\.\imgproc\segmentation.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\imgproc.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\ml.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\ml\ml.inl.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\aruco_detector.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\aruco_dictionary.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\aruco_board.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\graphical_code_detector.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\detection_based_tracker.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\face.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\charuco_detector.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\barcode.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\photo.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\warpers.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\warpers.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cuda.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cuda_types.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cuda.inl.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cuda.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\opencv_modules.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\warpers_inl.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\warpers.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\matchers.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\opencv_modules.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\motion_estimators.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\util.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\util_inl.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\queue"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\deque"
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\util.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\camera.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\exposure_compensate.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\seam_finders.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\opencv_modules.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\blenders.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\video.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\video\tracking.hpp
+CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj: D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\video\background_segm.hpp
 
 
 CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "D:\Github Repos\node-based-image-processor\src\main.cpp"
@@ -1255,6 +1509,8 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "D:\Github Repos\node-based-image-processor\libs\imgui\imgui.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\video\background_segm.hpp:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wctype.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\oleidl.h":
@@ -1273,7 +1529,11 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\apiquery2.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\features2d.hpp:
+
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\lsh_index.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\d3d10misc.h":
 
@@ -1289,13 +1549,21 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vadefs.h":
 
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ymath.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\fileapifromapp.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\util_inl.hpp:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h":
 
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\mutex":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\specstrings_strict.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\mat.hpp:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memory.h":
 
@@ -1310,6 +1578,8 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\apisetcconv.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\seam_finders.hpp:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h":
 
@@ -1327,7 +1597,13 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\d3d11.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\async.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\atomic":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\ktmtypes.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\matx.hpp:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\rpc.h":
 
@@ -1337,6 +1613,8 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\driverspecs.h":
 
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\memoryapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winpackagefamily.h":
@@ -1345,7 +1623,11 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\sdv_driverspecs.h":
 
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xstddef":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\sdkddkver.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\allocator.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\profileapi.h":
 
@@ -1370,6 +1652,8 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\wtypesbase.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\errhandlingapi.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\use_ansi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\specstrings.h":
 
@@ -1431,6 +1715,8 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\synchapi.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann.hpp:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\interlockedapi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\processthreadsapi.h":
@@ -1441,6 +1727,10 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\threadpoollegacyapiset.h":
 
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_startup.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\__msvc_system_error_abi.hpp":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\d3d11shader.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\wincrypt.h":
@@ -1448,6 +1738,8 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\threadpoolapiset.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\jobapi.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\matx.inl.hpp:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\ocidl.h":
 
@@ -1457,11 +1749,19 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\wow64apiset.h":
 
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\typeinfo":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\securitybaseapi.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\time.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\namespaceapi.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\kdtree_index.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\systemtopologyapi.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\aruco_board.hpp:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\processtopologyapi.h":
 
@@ -1469,9 +1769,13 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winerror.h":
 
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\process.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winuser.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\tvout.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cstdio":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winnls.h":
 
@@ -1479,17 +1783,31 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\stringapiset.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\any.h:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\string":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\yvals_core.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\wincon.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\consoleapi.h":
 
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys\stat.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\consoleapi2.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\streambuf":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\consoleapi3.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winver.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn.hpp:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\rpcnsi.h":
 
@@ -1497,19 +1815,33 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winreg.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\imgcodecs.hpp:
+
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\zmmintrin.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winnetwk.h":
 
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\limits":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\wnnc.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\timer.h:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\unknwn.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\cderr.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\affine.hpp:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\dde.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\ddeml.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\operations.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\yvals.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\dlgs.h":
 
@@ -1521,7 +1853,15 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\mciapi.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\utils\logger.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\tuple":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\mmiscapi.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\utility":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\mmiscapi2.h":
 
@@ -1529,7 +1869,11 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\mmeapi.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\fast_math.hpp:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\timeapi.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\ovx.hpp:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\nb30.h":
 
@@ -1549,13 +1893,21 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winperf.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\utils\inference_engine.hpp:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winsock.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\inaddr.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\dict.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\intrin.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\bcrypt.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\ncrypt.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\matchers.hpp:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\dpapi.h":
 
@@ -1565,9 +1917,13 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\rpcnsip.h":
 
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xfacet":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\rpcsal.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winsmcrd.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xcall_once.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winspool.h":
 
@@ -1577,7 +1933,11 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\combaseapi.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\general.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\nn_index.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h":
 
@@ -1601,23 +1961,39 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\msxml.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\camera.hpp:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\propidl.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\oleauto.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\stralign.h":
 
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_share.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winsvc.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\mcx.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\barcode.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\detection_based_tracker.hpp:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\share.h":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\ime_cmodes.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\ground_truth.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\matrix.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\dxgi.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\dxgitype.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\dxgiformat.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\aruco_detector.hpp:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\d3dcommon.h":
 
@@ -1627,6 +2003,8 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\d3d10_1shader.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\opencv.hpp:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\d3dcompiler.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\d3d12shader.h":
@@ -1635,7 +2013,11 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "D:\Github Repos\node-based-image-processor\libs\imgui\backends\imgui_impl_win32.h":
 
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\algorithm":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\windowsx.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\isa_availability.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\tchar.h":
 
@@ -1643,9 +2025,17 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\uxtheme.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\charuco_detector.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\map":
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\commctrl.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\dpa_dsa.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\.\imgproc\segmentation.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\layer.hpp:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\xinput.h":
 
@@ -1658,6 +2048,8 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\wmmintrin.h":
 
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\nmmintrin.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\clocale":
 
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\smmintrin.h":
 
@@ -1673,6 +2065,8 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\Windows.h":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\highgui.hpp:
+
 "D:\Github Repos\node-based-image-processor\libs\imgui\imgui_demo.cpp":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\inttypes.h":
@@ -1687,8 +2081,306 @@ CMakeFiles\node-based-image-processor.dir\src\main.cpp.obj: "C:\Program Files (x
 
 "D:\Github Repos\node-based-image-processor\libs\imgui\imgui_widgets.cpp":
 
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ctime":
+
 "D:\Github Repos\node-based-image-processor\libs\imgui\imstb_textedit.h":
 
 "D:\Github Repos\node-based-image-processor\src\gui.cpp":
 
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\opencv_modules.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cvdef.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\version.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cfloat":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys\types.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\climits":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\types.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cwchar":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\complex":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\wchar.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wconio.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wdirect.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\utils\..\dnn.hpp:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wio.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\iterator":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wprocess.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\intrin0.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cstddef":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xtr1common":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cstdlib":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\initializer_list":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\hal\interface.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cv_cpu_dispatch.h:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\setjmp.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ammintrin.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xatomic.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\eh.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cstdint":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\base.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\config.h:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xmemory":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\new":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\exception":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\crtdefs.h":
+
 "D:\Github Repos\node-based-image-processor\src\main.cpp":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\type_traits":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_terminate.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xiosbase":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xutility":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\random.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\calib3d.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cstring":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cvstd.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cctype":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xstring":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\iosfwd":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xpolymorphic_allocator.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\__msvc_chrono.hpp":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cmath":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cvstd_wrapper.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\memory":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\neon_utils.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\vsx_utils.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\check.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\all_indices.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\traits.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\saturate.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vector":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\chrono":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\bufferpool.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\array":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\mat.inl.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\persistence.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cvstd.inl.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\sstream":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\lsh_table.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\composite_index.h:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\istream":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ostream":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ios":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xlocnum":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\system_error":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\saving.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\params.h:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\cerrno":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\iostream":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\stdexcept":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xerrc.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xthreads.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xlocmon":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xtimec.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xlocale":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xlocinfo":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xlocinfo.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\dist.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\locale.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\utility.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\functional":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\unordered_map":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xtree":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\utils\logger.defines.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xhash":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\list":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xbit_ops.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xnode_handle.h":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\ratio":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\motion_estimators.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\optim.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\thread":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\vcruntime_startup.h":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\miniflann.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\linear_index.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\defines.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\video\tracking.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\dnn.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\utils\logtag.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\..\dnn\version.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\dnn\dnn.inl.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\flann_base.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\result_set.h:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\set":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\dynamic_bitset.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\ml\ml.inl.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\heap.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\kdtree_single_index.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\kmeans_index.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\logger.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\hierarchical_clustering_index.h:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\iomanip":
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\xloctime":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\autotuned_index.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\index_testing.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\flann\sampling.h:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\videoio.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\imgproc.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\ml.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\aruco_dictionary.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\graphical_code_detector.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\objdetect\face.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\photo.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\warpers.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\warpers.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cuda.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cuda_types.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\core\cuda.inl.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\warpers_inl.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\deque":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\util.hpp:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include\queue":
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\exposure_compensate.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\stitching\detail\blenders.hpp:
+
+D:\vcpkg\installed\x64-windows\include\opencv4\opencv2\video.hpp:
