@@ -21,7 +21,6 @@ HWND g_hWnd = nullptr;
 
 // Image Buffers
 cv::Mat original_image;
-cv::Mat processed_image;
 ID3D11ShaderResourceView* g_texture = nullptr;
 ID3D11ShaderResourceView* g_processedTexture = nullptr;
 int g_imageWidth = 0, g_imageHeight = 0;
@@ -29,7 +28,7 @@ int g_imageWidth = 0, g_imageHeight = 0;
 // Node State
 bool show_grayscale = false;
 bool show_brightness = false;
-float brightness_value = 0.0f; // -100 to +100
+float brightness_value = 0.0f;
 
 // Helper Functions
 void CreateRenderTarget() {
@@ -194,21 +193,28 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
 
         ImGui::Separator();
         ImGui::Checkbox("Apply Grayscale", &show_grayscale);
-
-        if (show_grayscale) {
-            cv::cvtColor(original_image, processed_image, cv::COLOR_BGR2GRAY);
-            LoadImageToTexture(processed_image, &g_processedTexture, g_imageWidth, g_imageHeight);
-        }
-
-        ImGui::Separator();
         ImGui::Checkbox("Apply Brightness", &show_brightness);
+
         if (show_brightness) {
             ImGui::SliderFloat("Brightness", &brightness_value, -100.0f, 100.0f);
-            processed_image = original_image.clone();
-            processed_image.convertTo(processed_image, -1, 1, brightness_value);
-            LoadImageToTexture(processed_image, &g_processedTexture, g_imageWidth, g_imageHeight);
         }
 
+        // Chain processing
+        if (show_grayscale || show_brightness) {
+            cv::Mat current = original_image.clone();
+
+            if (show_grayscale) {
+                cv::cvtColor(current, current, cv::COLOR_BGR2GRAY);
+            }
+
+            if (show_brightness) {
+                current.convertTo(current, -1, 1, brightness_value);
+            }
+
+            LoadImageToTexture(current, &g_processedTexture, g_imageWidth, g_imageHeight);
+        }
+
+        // Show image
         if ((g_processedTexture && (show_grayscale || show_brightness))) {
             ImGui::Separator();
             ImGui::Text("Processed Image:");
