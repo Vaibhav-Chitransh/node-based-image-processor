@@ -2,7 +2,7 @@
 #define IMGUI_IMPL_WIN32_DISABLE_OBSOLETE_FUNCTIONS
 #define IMGUI_IMPL_WIN32_HAS_WNDPROC_HANDLER
 #include <windows.h>
-#include <windowsx.h> 
+#include <windowsx.h>
 #include <d3d11.h>
 #include <tchar.h>
 #include <imgui.h>
@@ -19,13 +19,17 @@ IDXGISwapChain* g_pSwapChain = nullptr;
 ID3D11RenderTargetView* g_mainRenderTargetView = nullptr;
 HWND g_hWnd = nullptr;
 
-// Image Textures & Buffers
+// Image Buffers
+cv::Mat original_image;
+cv::Mat processed_image;
 ID3D11ShaderResourceView* g_texture = nullptr;
 ID3D11ShaderResourceView* g_processedTexture = nullptr;
 int g_imageWidth = 0, g_imageHeight = 0;
-cv::Mat original_image;
-cv::Mat processed_image;
+
+// Node State
 bool show_grayscale = false;
+bool show_brightness = false;
+float brightness_value = 0.0f; // -100 to +100
 
 // Helper Functions
 void CreateRenderTarget() {
@@ -139,7 +143,6 @@ LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 
 // Application Entry
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
-    // Register window class
     WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, WndProc, 0L, 0L,
                       GetModuleHandle(NULL), NULL, NULL, NULL, NULL,
                       _T("ImGuiWindow"), NULL };
@@ -148,7 +151,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
                           WS_OVERLAPPEDWINDOW, 100, 100, 1280, 720,
                           NULL, NULL, wc.hInstance, NULL);
 
-    // Initialize D3D
     if (!CreateDeviceD3D(g_hWnd)) {
         CleanupDeviceD3D();
         UnregisterClass(wc.lpszClassName, wc.hInstance);
@@ -158,7 +160,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
     ShowWindow(g_hWnd, SW_SHOWDEFAULT);
     UpdateWindow(g_hWnd);
 
-    // Setup Dear ImGui
+    // Setup ImGui
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
@@ -166,7 +168,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
     ImGui_ImplWin32_Init(g_hWnd);
     ImGui_ImplDX11_Init(g_pd3dDevice, g_pd3dDeviceContext);
 
-    // Load the original image
+    // Load Image
     original_image = cv::imread("../assets/test.jpg");
     if (!original_image.empty()) {
         LoadImageToTexture(original_image, &g_texture, g_imageWidth, g_imageHeight);
@@ -186,7 +188,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
         ImGui_ImplWin32_NewFrame();
         ImGui::NewFrame();
 
-        // GUI Window
         ImGui::Begin("Welcome to Node-Based Image Editor!");
         ImGui::Text("This is a basic ImGui window.");
         ImGui::Button("Click Me!");
@@ -199,9 +200,18 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
             LoadImageToTexture(processed_image, &g_processedTexture, g_imageWidth, g_imageHeight);
         }
 
-        if (g_processedTexture && show_grayscale) {
+        ImGui::Separator();
+        ImGui::Checkbox("Apply Brightness", &show_brightness);
+        if (show_brightness) {
+            ImGui::SliderFloat("Brightness", &brightness_value, -100.0f, 100.0f);
+            processed_image = original_image.clone();
+            processed_image.convertTo(processed_image, -1, 1, brightness_value);
+            LoadImageToTexture(processed_image, &g_processedTexture, g_imageWidth, g_imageHeight);
+        }
+
+        if ((g_processedTexture && (show_grayscale || show_brightness))) {
             ImGui::Separator();
-            ImGui::Text("Processed Image (Grayscale):");
+            ImGui::Text("Processed Image:");
             ImGui::Image((ImTextureID)g_processedTexture, ImVec2((float)g_imageWidth, (float)g_imageHeight));
         } else if (g_texture) {
             ImGui::Separator();
@@ -217,7 +227,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
         g_pd3dDeviceContext->ClearRenderTargetView(g_mainRenderTargetView, clear_color);
         ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
 
-        g_pSwapChain->Present(1, 0); // Vsync
+        g_pSwapChain->Present(1, 0);
     }
 
     ImGui_ImplDX11_Shutdown();
