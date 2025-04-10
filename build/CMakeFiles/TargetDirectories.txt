@@ -1,0 +1,3 @@
+D:/Github Repos/node-based-image-processor/build/CMakeFiles/node-based-image-processor.dir
+D:/Github Repos/node-based-image-processor/build/CMakeFiles/edit_cache.dir
+D:/Github Repos/node-based-image-processor/build/CMakeFiles/rebuild_cache.dir

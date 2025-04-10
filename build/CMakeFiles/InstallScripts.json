@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Github Repos/node-based-image-processor/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
