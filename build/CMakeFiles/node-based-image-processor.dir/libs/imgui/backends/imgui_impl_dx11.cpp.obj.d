@@ -1,13 +1,31 @@
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/windows.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/winapifamily.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/winpackagefamily.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/sdkddkver.h
-C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/excpt.h
+D:/Github Repos/node-based-image-processor/libs/imgui/imgui.h
+D:/Github Repos/node-based-image-processor/libs/imgui/imconfig.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/float.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt.h
 C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/vcruntime.h
 C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/sal.h
 C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/concurrencysal.h
 C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/vadefs.h
 C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/stdarg.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/stddef.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/string.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_memory.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_memcpy_s.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/errno.h
+C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/vcruntime_string.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_wstring.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/assert.h
+D:/Github Repos/node-based-image-processor/libs/imgui/backends/imgui_impl_dx11.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/stdio.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_wstdio.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_stdio_config.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d11.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/rpc.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/windows.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/winapifamily.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/winpackagefamily.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/sdkddkver.h
+C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/excpt.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/windef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/minwindef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/specstrings.h
@@ -17,17 +35,10 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/driverspecs.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/sdv_driverspecs.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/winnt.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/ctype.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_wctype.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/kernelspecs.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/basetsd.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/guiddef.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/string.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_memory.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_memcpy_s.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/errno.h
-C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/vcruntime_string.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_wstring.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack4.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack4.h
@@ -199,7 +210,6 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack8.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/stdlib.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_malloc.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_search.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/stddef.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/corecrt_wstdlib.h
 C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/limits.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/unknwnbase.h
@@ -229,3 +239,20 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/winsvc.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/mcx.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/imm.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/ime_cmodes.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/ocidl.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/dxgi.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/dxgicommon.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/dxgitype.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/dxgiformat.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3dcommon.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d11sdklayers.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10_1.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10sdklayers.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10misc.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10shader.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10effect.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10_1shader.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3dcompiler.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d11shader.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d12shader.h

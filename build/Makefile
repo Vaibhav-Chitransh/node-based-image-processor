@@ -118,6 +118,198 @@ node-based-image-processor\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\build
 .PHONY : node-based-image-processor\fast
 
+libs\imgui\backends\imgui_impl_dx11.obj: libs\imgui\backends\imgui_impl_dx11.cpp.obj
+.PHONY : libs\imgui\backends\imgui_impl_dx11.obj
+
+# target to build an object file
+libs\imgui\backends\imgui_impl_dx11.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\backends\imgui_impl_dx11.cpp.obj
+.PHONY : libs\imgui\backends\imgui_impl_dx11.cpp.obj
+
+libs\imgui\backends\imgui_impl_dx11.i: libs\imgui\backends\imgui_impl_dx11.cpp.i
+.PHONY : libs\imgui\backends\imgui_impl_dx11.i
+
+# target to preprocess a source file
+libs\imgui\backends\imgui_impl_dx11.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\backends\imgui_impl_dx11.cpp.i
+.PHONY : libs\imgui\backends\imgui_impl_dx11.cpp.i
+
+libs\imgui\backends\imgui_impl_dx11.s: libs\imgui\backends\imgui_impl_dx11.cpp.s
+.PHONY : libs\imgui\backends\imgui_impl_dx11.s
+
+# target to generate assembly for a file
+libs\imgui\backends\imgui_impl_dx11.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\backends\imgui_impl_dx11.cpp.s
+.PHONY : libs\imgui\backends\imgui_impl_dx11.cpp.s
+
+libs\imgui\backends\imgui_impl_win32.obj: libs\imgui\backends\imgui_impl_win32.cpp.obj
+.PHONY : libs\imgui\backends\imgui_impl_win32.obj
+
+# target to build an object file
+libs\imgui\backends\imgui_impl_win32.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\backends\imgui_impl_win32.cpp.obj
+.PHONY : libs\imgui\backends\imgui_impl_win32.cpp.obj
+
+libs\imgui\backends\imgui_impl_win32.i: libs\imgui\backends\imgui_impl_win32.cpp.i
+.PHONY : libs\imgui\backends\imgui_impl_win32.i
+
+# target to preprocess a source file
+libs\imgui\backends\imgui_impl_win32.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\backends\imgui_impl_win32.cpp.i
+.PHONY : libs\imgui\backends\imgui_impl_win32.cpp.i
+
+libs\imgui\backends\imgui_impl_win32.s: libs\imgui\backends\imgui_impl_win32.cpp.s
+.PHONY : libs\imgui\backends\imgui_impl_win32.s
+
+# target to generate assembly for a file
+libs\imgui\backends\imgui_impl_win32.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\backends\imgui_impl_win32.cpp.s
+.PHONY : libs\imgui\backends\imgui_impl_win32.cpp.s
+
+libs\imgui\imgui.obj: libs\imgui\imgui.cpp.obj
+.PHONY : libs\imgui\imgui.obj
+
+# target to build an object file
+libs\imgui\imgui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui.cpp.obj
+.PHONY : libs\imgui\imgui.cpp.obj
+
+libs\imgui\imgui.i: libs\imgui\imgui.cpp.i
+.PHONY : libs\imgui\imgui.i
+
+# target to preprocess a source file
+libs\imgui\imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui.cpp.i
+.PHONY : libs\imgui\imgui.cpp.i
+
+libs\imgui\imgui.s: libs\imgui\imgui.cpp.s
+.PHONY : libs\imgui\imgui.s
+
+# target to generate assembly for a file
+libs\imgui\imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui.cpp.s
+.PHONY : libs\imgui\imgui.cpp.s
+
+libs\imgui\imgui_demo.obj: libs\imgui\imgui_demo.cpp.obj
+.PHONY : libs\imgui\imgui_demo.obj
+
+# target to build an object file
+libs\imgui\imgui_demo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_demo.cpp.obj
+.PHONY : libs\imgui\imgui_demo.cpp.obj
+
+libs\imgui\imgui_demo.i: libs\imgui\imgui_demo.cpp.i
+.PHONY : libs\imgui\imgui_demo.i
+
+# target to preprocess a source file
+libs\imgui\imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_demo.cpp.i
+.PHONY : libs\imgui\imgui_demo.cpp.i
+
+libs\imgui\imgui_demo.s: libs\imgui\imgui_demo.cpp.s
+.PHONY : libs\imgui\imgui_demo.s
+
+# target to generate assembly for a file
+libs\imgui\imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_demo.cpp.s
+.PHONY : libs\imgui\imgui_demo.cpp.s
+
+libs\imgui\imgui_draw.obj: libs\imgui\imgui_draw.cpp.obj
+.PHONY : libs\imgui\imgui_draw.obj
+
+# target to build an object file
+libs\imgui\imgui_draw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_draw.cpp.obj
+.PHONY : libs\imgui\imgui_draw.cpp.obj
+
+libs\imgui\imgui_draw.i: libs\imgui\imgui_draw.cpp.i
+.PHONY : libs\imgui\imgui_draw.i
+
+# target to preprocess a source file
+libs\imgui\imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_draw.cpp.i
+.PHONY : libs\imgui\imgui_draw.cpp.i
+
+libs\imgui\imgui_draw.s: libs\imgui\imgui_draw.cpp.s
+.PHONY : libs\imgui\imgui_draw.s
+
+# target to generate assembly for a file
+libs\imgui\imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_draw.cpp.s
+.PHONY : libs\imgui\imgui_draw.cpp.s
+
+libs\imgui\imgui_tables.obj: libs\imgui\imgui_tables.cpp.obj
+.PHONY : libs\imgui\imgui_tables.obj
+
+# target to build an object file
+libs\imgui\imgui_tables.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_tables.cpp.obj
+.PHONY : libs\imgui\imgui_tables.cpp.obj
+
+libs\imgui\imgui_tables.i: libs\imgui\imgui_tables.cpp.i
+.PHONY : libs\imgui\imgui_tables.i
+
+# target to preprocess a source file
+libs\imgui\imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_tables.cpp.i
+.PHONY : libs\imgui\imgui_tables.cpp.i
+
+libs\imgui\imgui_tables.s: libs\imgui\imgui_tables.cpp.s
+.PHONY : libs\imgui\imgui_tables.s
+
+# target to generate assembly for a file
+libs\imgui\imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_tables.cpp.s
+.PHONY : libs\imgui\imgui_tables.cpp.s
+
+libs\imgui\imgui_widgets.obj: libs\imgui\imgui_widgets.cpp.obj
+.PHONY : libs\imgui\imgui_widgets.obj
+
+# target to build an object file
+libs\imgui\imgui_widgets.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_widgets.cpp.obj
+.PHONY : libs\imgui\imgui_widgets.cpp.obj
+
+libs\imgui\imgui_widgets.i: libs\imgui\imgui_widgets.cpp.i
+.PHONY : libs\imgui\imgui_widgets.i
+
+# target to preprocess a source file
+libs\imgui\imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_widgets.cpp.i
+.PHONY : libs\imgui\imgui_widgets.cpp.i
+
+libs\imgui\imgui_widgets.s: libs\imgui\imgui_widgets.cpp.s
+.PHONY : libs\imgui\imgui_widgets.s
+
+# target to generate assembly for a file
+libs\imgui\imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\libs\imgui\imgui_widgets.cpp.s
+.PHONY : libs\imgui\imgui_widgets.cpp.s
+
+src\gui.obj: src\gui.cpp.obj
+.PHONY : src\gui.obj
+
+# target to build an object file
+src\gui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\src\gui.cpp.obj
+.PHONY : src\gui.cpp.obj
+
+src\gui.i: src\gui.cpp.i
+.PHONY : src\gui.i
+
+# target to preprocess a source file
+src\gui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\src\gui.cpp.i
+.PHONY : src\gui.cpp.i
+
+src\gui.s: src\gui.cpp.s
+.PHONY : src\gui.s
+
+# target to generate assembly for a file
+src\gui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\node-based-image-processor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\node-based-image-processor.dir\src\gui.cpp.s
+.PHONY : src\gui.cpp.s
+
 src\main.obj: src\main.cpp.obj
 .PHONY : src\main.obj
 
@@ -151,6 +343,30 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... node-based-image-processor
+	@echo ... libs/imgui/backends/imgui_impl_dx11.obj
+	@echo ... libs/imgui/backends/imgui_impl_dx11.i
+	@echo ... libs/imgui/backends/imgui_impl_dx11.s
+	@echo ... libs/imgui/backends/imgui_impl_win32.obj
+	@echo ... libs/imgui/backends/imgui_impl_win32.i
+	@echo ... libs/imgui/backends/imgui_impl_win32.s
+	@echo ... libs/imgui/imgui.obj
+	@echo ... libs/imgui/imgui.i
+	@echo ... libs/imgui/imgui.s
+	@echo ... libs/imgui/imgui_demo.obj
+	@echo ... libs/imgui/imgui_demo.i
+	@echo ... libs/imgui/imgui_demo.s
+	@echo ... libs/imgui/imgui_draw.obj
+	@echo ... libs/imgui/imgui_draw.i
+	@echo ... libs/imgui/imgui_draw.s
+	@echo ... libs/imgui/imgui_tables.obj
+	@echo ... libs/imgui/imgui_tables.i
+	@echo ... libs/imgui/imgui_tables.s
+	@echo ... libs/imgui/imgui_widgets.obj
+	@echo ... libs/imgui/imgui_widgets.i
+	@echo ... libs/imgui/imgui_widgets.s
+	@echo ... src/gui.obj
+	@echo ... src/gui.i
+	@echo ... src/gui.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

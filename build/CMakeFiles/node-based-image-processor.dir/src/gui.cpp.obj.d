@@ -229,3 +229,26 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/winsvc.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/mcx.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/imm.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/ime_cmodes.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/windowsx.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d11.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/ocidl.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/dxgi.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/dxgicommon.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/dxgitype.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/dxgiformat.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3dcommon.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d11sdklayers.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10_1.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10sdklayers.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10misc.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10shader.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10effect.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/d3d10_1shader.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/tchar.h
+D:/Github Repos/node-based-image-processor/libs/imgui/imgui.h
+D:/Github Repos/node-based-image-processor/libs/imgui/imconfig.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/float.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/assert.h
+D:/Github Repos/node-based-image-processor/libs/imgui/backends/imgui_impl_win32.h
+D:/Github Repos/node-based-image-processor/libs/imgui/backends/imgui_impl_dx11.h

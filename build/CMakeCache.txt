@@ -220,6 +220,9 @@ Tiff_DIR:PATH=Tiff_DIR-NOTFOUND
 //The directory containing a CMake configuration file for absl.
 absl_DIR:PATH=D:/vcpkg/installed/x64-windows/share/absl
 
+//The directory containing a CMake configuration file for imgui.
+imgui_DIR:PATH=imgui_DIR-NOTFOUND
+
 //Value Computed by CMake
 node-based-image-processor_BINARY_DIR:STATIC=D:/Github Repos/node-based-image-processor/build
 
