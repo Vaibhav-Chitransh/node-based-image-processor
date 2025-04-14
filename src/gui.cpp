@@ -9,6 +9,8 @@
 #include <backends/imgui_impl_win32.h>
 #include <backends/imgui_impl_dx11.h>
 #include <opencv2/opencv.hpp>
+#include <shobjidl.h> 
+#include <string>
 
 #pragma comment(lib, "d3d11.lib")
 
@@ -31,19 +33,92 @@ bool show_brightness = false;
 float brightness_value = 0.0f;
 bool show_contrast = false;
 float contrast_value = 1.0f;
-// Add blur states
 bool show_blur = false;
 int blur_radius = 1;
 bool use_gaussian = true;
-// Add edge detection states
 bool show_edge_detection = false;
-bool use_canny = true;  // true for Canny, false for Sobel
+bool use_canny = true;
 int lower_threshold = 100;
 int upper_threshold = 200;
 int kernel_size = 1;
 bool overlay_edges = false;
 
+// Function declarations
+bool LoadImageToTexture(const cv::Mat& image, ID3D11ShaderResourceView** out_texture, int& width, int& height);
+void CreateRenderTarget();
+void CleanupRenderTarget();
+void CleanupDeviceD3D();
+bool CreateDeviceD3D(HWND hWnd);
+
 // Helper Functions
+std::wstring OpenFileDialog() {
+    HRESULT hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
+    if (FAILED(hr))
+        return L"";
+
+    IFileOpenDialog *pFileOpen;
+    hr = CoCreateInstance(CLSID_FileOpenDialog, NULL, CLSCTX_ALL, 
+                         IID_IFileOpenDialog, reinterpret_cast<void**>(&pFileOpen));
+
+    if (SUCCEEDED(hr)) {
+        // Set file types
+        COMDLG_FILTERSPEC fileTypes[] = {
+            {L"Image Files", L"*.jpg;*.jpeg;*.png;*.bmp"},
+            {L"All Files", L"*.*"}
+        };
+        pFileOpen->SetFileTypes(2, fileTypes);
+
+        // Show the dialog
+        hr = pFileOpen->Show(NULL);
+
+        if (SUCCEEDED(hr)) {
+            IShellItem *pItem;
+            hr = pFileOpen->GetResult(&pItem);
+            if (SUCCEEDED(hr)) {
+                PWSTR filePath;
+                hr = pItem->GetDisplayName(SIGDN_FILESYSPATH, &filePath);
+                if (SUCCEEDED(hr)) {
+                    std::wstring path(filePath);
+                    CoTaskMemFree(filePath);
+                    pItem->Release();
+                    pFileOpen->Release();
+                    CoUninitialize();
+                    return path;
+                }
+                pItem->Release();
+            }
+        }
+        pFileOpen->Release();
+    }
+    CoUninitialize();
+    return L"";
+}
+
+bool LoadNewImage(const std::wstring& path) {
+    if (path.empty()) return false;
+
+    // Convert wide string to string
+    std::string pathStr(path.begin(), path.end());
+    
+    // Load the new image
+    cv::Mat new_image = cv::imread(pathStr);
+    if (new_image.empty()) return false;
+
+    // Clean up old textures
+    if (g_texture) {
+        g_texture->Release();
+        g_texture = nullptr;
+    }
+    if (g_processedTexture) {
+        g_processedTexture->Release();
+        g_processedTexture = nullptr;
+    }
+
+    // Update the original image and create new texture
+    original_image = new_image;
+    return LoadImageToTexture(original_image, &g_texture, g_imageWidth, g_imageHeight);
+}
+
 void CreateRenderTarget() {
     ID3D11Texture2D* pBackBuffer = nullptr;
     g_pSwapChain->GetBuffer(0, IID_PPV_ARGS(&pBackBuffer));
@@ -180,12 +255,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
     ImGui_ImplWin32_Init(g_hWnd);
     ImGui_ImplDX11_Init(g_pd3dDevice, g_pd3dDeviceContext);
 
-    // Load Image
-    original_image = cv::imread("../assets/test.jpg");
-    if (!original_image.empty()) {
-        LoadImageToTexture(original_image, &g_texture, g_imageWidth, g_imageHeight);
-    }
-
     // Main loop
     MSG msg;
     ZeroMemory(&msg, sizeof(msg));
@@ -201,8 +270,21 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
         ImGui::NewFrame();
 
         ImGui::Begin("Welcome to Node-Based Image Editor!");
-        ImGui::Text("This is a basic ImGui window.");
-        ImGui::Button("Click Me!");
+        
+        if (ImGui::Button("Load Image")) {
+            std::wstring filePath = OpenFileDialog();
+            if (!filePath.empty()) {
+                LoadNewImage(filePath);
+            }
+        }
+
+        // Add status text to show if image is loaded
+        if (original_image.empty()) {
+            ImGui::TextColored(ImVec4(1.0f, 0.0f, 0.0f, 1.0f), "No image loaded!");
+        } else {
+            ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), 
+                "Image loaded: %dx%d", original_image.cols, original_image.rows);
+        }
 
         ImGui::Separator();
         ImGui::Checkbox("Apply Grayscale", &show_grayscale);
@@ -234,7 +316,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
         }
 
         // Chain processing
-        if (show_grayscale || show_brightness || show_contrast || show_blur || show_edge_detection) {
+        if (!original_image.empty() && (show_grayscale || show_brightness || show_contrast || show_blur || show_edge_detection)) {
             cv::Mat current = original_image.clone();
 
             if (show_grayscale) {
@@ -259,7 +341,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
                 cv::Mat gray;
                 
                 // Ensure kernel size is odd
-                int adjusted_kernel_size = kernel_size * 2 - 1;  // This will convert 3->5, 4->7, 5->9 etc.
+                int adjusted_kernel_size = kernel_size * 2 - 1;
                 
                 // Convert to grayscale for edge detection
                 if (current.channels() == 3) {
@@ -269,42 +351,31 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
                 }
 
                 if (use_canny) {
-                    // Apply Gaussian blur before Canny (common practice)
+                    // Apply Gaussian blur before Canny
                     cv::GaussianBlur(gray, gray, cv::Size(adjusted_kernel_size, adjusted_kernel_size), 0);
-                    // Canny edge detection
                     cv::Canny(gray, edges, lower_threshold, upper_threshold);
                 } else {
                     // Sobel edge detection
                     cv::Mat grad_x, grad_y;
                     cv::Mat abs_grad_x, abs_grad_y;
                     
-                    // Ensure kernel size is valid for Sobel
                     cv::Sobel(gray, grad_x, CV_16S, 1, 0, adjusted_kernel_size);
                     cv::Sobel(gray, grad_y, CV_16S, 0, 1, adjusted_kernel_size);
                     
                     cv::convertScaleAbs(grad_x, abs_grad_x);
                     cv::convertScaleAbs(grad_y, abs_grad_y);
                     
-                    // Combine the gradients
                     cv::addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 0, edges);
-                    
-                    // Apply thresholding to make edges more visible
                     cv::threshold(edges, edges, lower_threshold, 255, cv::THRESH_BINARY);
                 }
 
                 if (overlay_edges) {
-                    // Convert edges to BGR for overlay
                     cv::Mat edges_bgr;
                     cv::cvtColor(edges, edges_bgr, cv::COLOR_GRAY2BGR);
-                    
-                    // Create overlay with red edges
                     cv::Mat overlay = current.clone();
                     overlay.setTo(cv::Scalar(0, 0, 255), edges);
-                    
-                    // Blend with original
                     cv::addWeighted(current, 0.7, overlay, 0.3, 0, current);
                 } else {
-                    // If not overlaying, just show the edges
                     cv::cvtColor(edges, current, cv::COLOR_GRAY2BGR);
                 }
             }
