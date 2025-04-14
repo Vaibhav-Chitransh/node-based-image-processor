@@ -5,29 +5,25 @@ events:
     kind: "message-v1"
     backtrace:
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:205 (message)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       The system is: Windows - 10.0.26100 - AMD64
-...
-
----
-events:
   -
     kind: "message-v1"
     backtrace:
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe 
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
       Build flags: 
       Id flags:  
       
       The output was:
       0
-      Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x64
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x86
       Copyright (C) Microsoft Corporation.  All rights reserved.
       
       CMakeCCompilerId.c
@@ -51,7 +47,7 @@ events:
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1281 (message)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
@@ -64,16 +60,16 @@ events:
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe 
+      Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
       Build flags: 
       Id flags:  
       
       The output was:
       0
-      Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x64
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x86
       Copyright (C) Microsoft Corporation.  All rights reserved.
       
       CMakeCXXCompilerId.cpp
@@ -97,7 +93,7 @@ events:
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1281 (message)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       Detecting CXX compiler /showIncludes prefix:
         main.c
@@ -109,42 +105,46 @@ events:
     backtrace:
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-tcm9xy"
-      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-tcm9xy"
+      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-2q4frw"
+      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-2q4frw"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      VCPKG_INSTALLED_DIR: "D:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x86-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-tcm9xy'
+        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-2q4frw'
         
-        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_29488\\fast
-        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_29488.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_29488.dir\\build
-        Building C object CMakeFiles/cmTC_29488.dir/CMakeCCompilerABI.c.obj
-        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_29488.dir\\CMakeCCompilerABI.c.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tcm9xy" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmD1C4.tmp
+        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_9f9ab\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_9f9ab.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_9f9ab.dir\\build
+        Building C object CMakeFiles/cmTC_9f9ab.dir/CMakeCCompilerABI.c.obj
+        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_9f9ab.dir\\CMakeCCompilerABI.c.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q4frw" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmB87.tmp
         CMakeCCompilerABI.c
-        Linking C executable cmTC_29488.exe
-        	D:\\Softwares\\bin\\cmake.exe -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_29488.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_29488.dir\\objects1.rsp @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmD34C.tmp
+        Linking C executable cmTC_9f9ab.exe
+        	D:\\Softwares\\bin\\cmake.exe -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_9f9ab.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_9f9ab.dir\\objects1.rsp @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmBE5.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_29488.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_29488.dir/embed.manifest
+        Create CMakeFiles\\cmTC_9f9ab.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_9f9ab.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_29488.dir/manifest.res CMakeFiles\\cmTC_29488.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_9f9ab.dir/manifest.res CMakeFiles\\cmTC_9f9ab.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_29488.dir\\objects1.rsp /out:cmTC_29488.exe /implib:cmTC_29488.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tcm9xy\\cmTC_29488.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_29488.dir/intermediate.manifest CMakeFiles\\cmTC_29488.dir/manifest.res
+        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_9f9ab.dir\\objects1.rsp /out:cmTC_9f9ab.exe /implib:cmTC_9f9ab.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q4frw\\cmTC_9f9ab.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_9f9ab.dir/intermediate.manifest CMakeFiles\\cmTC_9f9ab.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_29488.dir/intermediate.manifest /out:CMakeFiles\\cmTC_29488.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_9f9ab.dir/intermediate.manifest /out:CMakeFiles\\cmTC_9f9ab.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_29488.dir/manifest.res CMakeFiles\\cmTC_29488.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_9f9ab.dir/manifest.res CMakeFiles\\cmTC_9f9ab.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_29488.dir\\objects1.rsp /out:cmTC_29488.exe /implib:cmTC_29488.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tcm9xy\\cmTC_29488.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_29488.dir/intermediate.manifest CMakeFiles\\cmTC_29488.dir/manifest.res
+        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_9f9ab.dir\\objects1.rsp /out:cmTC_9f9ab.exe /implib:cmTC_9f9ab.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2q4frw\\cmTC_9f9ab.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_9f9ab.dir/intermediate.manifest CMakeFiles\\cmTC_9f9ab.dir/manifest.res
         
       exitCode: 0
   -
@@ -152,12 +152,12 @@ events:
     backtrace:
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'C': C:/PROGRA~2/MICROS~3/2019/BUILDT~1/VC/Tools/MSVC/1429~1.301/bin/Hostx64/x64/link.exe
+        linker tool for 'C': C:/PROGRA~2/MICROS~3/2019/BUILDT~1/VC/Tools/MSVC/1429~1.301/bin/Hostx86/x86/link.exe
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -170,9 +170,9 @@ events:
       - "D:/Softwares/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
-      Running the C compiler's linker: "C:/PROGRA~2/MICROS~3/2019/BUILDT~1/VC/Tools/MSVC/1429~1.301/bin/Hostx64/x64/link.exe" "-v"
+      Running the C compiler's linker: "C:/PROGRA~2/MICROS~3/2019/BUILDT~1/VC/Tools/MSVC/1429~1.301/bin/Hostx86/x86/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.29.30154.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
@@ -180,43 +180,47 @@ events:
     backtrace:
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-hi6k8t"
-      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-hi6k8t"
+      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-rdbsnz"
+      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-rdbsnz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      VCPKG_INSTALLED_DIR: "D:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x86-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-hi6k8t'
+        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-rdbsnz'
         
-        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_c0671\\fast
-        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_c0671.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_c0671.dir\\build
-        Building CXX object CMakeFiles/cmTC_c0671.dir/CMakeCXXCompilerABI.cpp.obj
-        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_c0671.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hi6k8t" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmD5CC.tmp
+        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_2a8cb\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_2a8cb.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_2a8cb.dir\\build
+        Building CXX object CMakeFiles/cmTC_2a8cb.dir/CMakeCXXCompilerABI.cpp.obj
+        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_2a8cb.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rdbsnz" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmE75.tmp
         CMakeCXXCompilerABI.cpp
-        Linking CXX executable cmTC_c0671.exe
-        	D:\\Softwares\\bin\\cmake.exe -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_c0671.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c0671.dir\\objects1.rsp @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmD62A.tmp
+        Linking CXX executable cmTC_2a8cb.exe
+        	D:\\Softwares\\bin\\cmake.exe -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_2a8cb.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_2a8cb.dir\\objects1.rsp @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmEE3.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_c0671.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_c0671.dir/embed.manifest
+        Create CMakeFiles\\cmTC_2a8cb.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_2a8cb.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_c0671.dir/manifest.res CMakeFiles\\cmTC_c0671.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_2a8cb.dir/manifest.res CMakeFiles\\cmTC_2a8cb.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c0671.dir\\objects1.rsp /out:cmTC_c0671.exe /implib:cmTC_c0671.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hi6k8t\\cmTC_c0671.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c0671.dir/intermediate.manifest CMakeFiles\\cmTC_c0671.dir/manifest.res
+        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_2a8cb.dir\\objects1.rsp /out:cmTC_2a8cb.exe /implib:cmTC_2a8cb.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rdbsnz\\cmTC_2a8cb.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2a8cb.dir/intermediate.manifest CMakeFiles\\cmTC_2a8cb.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_c0671.dir/intermediate.manifest /out:CMakeFiles\\cmTC_c0671.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_2a8cb.dir/intermediate.manifest /out:CMakeFiles\\cmTC_2a8cb.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_c0671.dir/manifest.res CMakeFiles\\cmTC_c0671.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_2a8cb.dir/manifest.res CMakeFiles\\cmTC_2a8cb.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c0671.dir\\objects1.rsp /out:cmTC_c0671.exe /implib:cmTC_c0671.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hi6k8t\\cmTC_c0671.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c0671.dir/intermediate.manifest CMakeFiles\\cmTC_c0671.dir/manifest.res
+        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_2a8cb.dir\\objects1.rsp /out:cmTC_2a8cb.exe /implib:cmTC_2a8cb.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rdbsnz\\cmTC_2a8cb.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2a8cb.dir/intermediate.manifest CMakeFiles\\cmTC_2a8cb.dir/manifest.res
         
       exitCode: 0
   -
@@ -224,12 +228,12 @@ events:
     backtrace:
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'CXX': C:/PROGRA~2/MICROS~3/2019/BUILDT~1/VC/Tools/MSVC/1429~1.301/bin/Hostx64/x64/link.exe
+        linker tool for 'CXX': C:/PROGRA~2/MICROS~3/2019/BUILDT~1/VC/Tools/MSVC/1429~1.301/bin/Hostx86/x86/link.exe
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -242,154 +246,9 @@ events:
       - "D:/Softwares/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
       - "D:/Softwares/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:8 (project)"
     message: |
-      Running the CXX compiler's linker: "C:/PROGRA~2/MICROS~3/2019/BUILDT~1/VC/Tools/MSVC/1429~1.301/bin/Hostx64/x64/link.exe" "-v"
+      Running the CXX compiler's linker: "C:/PROGRA~2/MICROS~3/2019/BUILDT~1/VC/Tools/MSVC/1429~1.301/bin/Hostx86/x86/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.29.30154.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "D:/Softwares/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
-      - "D:/Softwares/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
-      - "D:/Softwares/share/cmake-4.0/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
-      - "D:/Softwares/share/cmake-4.0/Modules/FindThreads.cmake:163 (_threads_check_libc)"
-      - "D:/Softwares/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
-      - "D:/vcpkg/installed/x64-windows/share/absl/abslConfig.cmake:4 (find_dependency)"
-      - "D:/vcpkg/installed/x64-windows/share/protobuf/protobuf-config.cmake:7 (find_package)"
-      - "D:/Softwares/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
-      - "D:/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules.cmake:19 (find_dependency)"
-      - "D:/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig.cmake:126 (include)"
-      - "CMakeLists.txt:12 (find_package)"
-    checks:
-      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
-    directories:
-      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-82w67j"
-      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-82w67j"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "CMAKE_HAVE_LIBC_PTHREAD"
-      cached: true
-      stdout: |
-        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-82w67j'
-        
-        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_112b3\\fast
-        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_112b3.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_112b3.dir\\build
-        Building C object CMakeFiles/cmTC_112b3.dir/src.c.obj
-        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_112b3.dir\\src.c.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-82w67j" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nm5C99.tmp
-        src.c
-        D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-82w67j\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
-        NMAKE : fatal error U1077: 'D:\\Softwares\\bin\\cmake.exe' : return code '0x2'
-        Stop.
-        NMAKE : fatal error U1077: '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
-        Stop.
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "D:/Softwares/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
-      - "D:/Softwares/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
-      - "D:/Softwares/share/cmake-4.0/Modules/FindThreads.cmake:175 (_threads_check_lib)"
-      - "D:/Softwares/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
-      - "D:/vcpkg/installed/x64-windows/share/absl/abslConfig.cmake:4 (find_dependency)"
-      - "D:/vcpkg/installed/x64-windows/share/protobuf/protobuf-config.cmake:7 (find_package)"
-      - "D:/Softwares/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
-      - "D:/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules.cmake:19 (find_dependency)"
-      - "D:/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig.cmake:126 (include)"
-      - "CMakeLists.txt:12 (find_package)"
-    checks:
-      - "Looking for pthread_create in pthreads"
-    directories:
-      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-heg1al"
-      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-heg1al"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "CMAKE_HAVE_PTHREADS_CREATE"
-      cached: true
-      stdout: |
-        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-heg1al'
-        
-        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_56c19\\fast
-        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_56c19.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_56c19.dir\\build
-        Building C object CMakeFiles/cmTC_56c19.dir/CheckFunctionExists.c.obj
-        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_56c19.dir\\CheckFunctionExists.c.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-heg1al" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nm5E9C.tmp
-        CheckFunctionExists.c
-        Linking C executable cmTC_56c19.exe
-        	D:\\Softwares\\bin\\cmake.exe -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_56c19.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_56c19.dir\\objects1.rsp @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nm5EFB.tmp
-        Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_56c19.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_56c19.dir/embed.manifest
-        RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_56c19.dir/manifest.res CMakeFiles\\cmTC_56c19.dir/manifest.rc
-        LINK Pass 1:
-        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_56c19.dir\\objects1.rsp /out:cmTC_56c19.exe /implib:cmTC_56c19.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-heg1al\\cmTC_56c19.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_56c19.dir/intermediate.manifest CMakeFiles\\cmTC_56c19.dir/manifest.res
-        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_56c19.dir\\objects1.rsp /out:cmTC_56c19.exe /implib:cmTC_56c19.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-heg1al\\cmTC_56c19.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_56c19.dir/intermediate.manifest CMakeFiles\\cmTC_56c19.dir/manifest.res" failed (exit code 1104) with the following output:
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib'
-        NMAKE : fatal error U1077: 'D:\\Softwares\\bin\\cmake.exe' : return code '0xffffffff'
-        Stop.
-        NMAKE : fatal error U1077: '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
-        Stop.
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "D:/Softwares/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
-      - "D:/Softwares/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
-      - "D:/Softwares/share/cmake-4.0/Modules/FindThreads.cmake:176 (_threads_check_lib)"
-      - "D:/Softwares/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
-      - "D:/vcpkg/installed/x64-windows/share/absl/abslConfig.cmake:4 (find_dependency)"
-      - "D:/vcpkg/installed/x64-windows/share/protobuf/protobuf-config.cmake:7 (find_package)"
-      - "D:/Softwares/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
-      - "D:/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules.cmake:19 (find_dependency)"
-      - "D:/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig.cmake:126 (include)"
-      - "CMakeLists.txt:12 (find_package)"
-    checks:
-      - "Looking for pthread_create in pthread"
-    directories:
-      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-oa1qf8"
-      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-oa1qf8"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "CMAKE_HAVE_PTHREAD_CREATE"
-      cached: true
-      stdout: |
-        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-oa1qf8'
-        
-        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_a28fd\\fast
-        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_a28fd.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_a28fd.dir\\build
-        Building C object CMakeFiles/cmTC_a28fd.dir/CheckFunctionExists.c.obj
-        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_a28fd.dir\\CheckFunctionExists.c.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa1qf8" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nm6032.tmp
-        CheckFunctionExists.c
-        Linking C executable cmTC_a28fd.exe
-        	D:\\Softwares\\bin\\cmake.exe -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_a28fd.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a28fd.dir\\objects1.rsp @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nm6082.tmp
-        Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_a28fd.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_a28fd.dir/embed.manifest
-        RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_a28fd.dir/manifest.res CMakeFiles\\cmTC_a28fd.dir/manifest.rc
-        LINK Pass 1:
-        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a28fd.dir\\objects1.rsp /out:cmTC_a28fd.exe /implib:cmTC_a28fd.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa1qf8\\cmTC_a28fd.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a28fd.dir/intermediate.manifest CMakeFiles\\cmTC_a28fd.dir/manifest.res
-        LINK Pass 1: command "C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_a28fd.dir\\objects1.rsp /out:cmTC_a28fd.exe /implib:cmTC_a28fd.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oa1qf8\\cmTC_a28fd.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a28fd.dir/intermediate.manifest CMakeFiles\\cmTC_a28fd.dir/manifest.res" failed (exit code 1104) with the following output:
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib'
-        NMAKE : fatal error U1077: 'D:\\Softwares\\bin\\cmake.exe' : return code '0xffffffff'
-        Stop.
-        NMAKE : fatal error U1077: '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"' : return code '0x2'
-        Stop.
-        
-      exitCode: 2
 ...

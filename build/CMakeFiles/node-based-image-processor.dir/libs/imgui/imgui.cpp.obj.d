@@ -61,6 +61,8 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack4.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack4.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack4.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack2.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack2.h
@@ -148,4 +150,6 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/mcx.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/imm.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/ime_cmodes.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/shellapi.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack1.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/imm.h

@@ -1,27 +1,61 @@
 cmake_minimum_required(VERSION 3.15)
+
+# Use vcpkg toolchain if available
+if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+    set(CMAKE_TOOLCHAIN_FILE "D:/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "")
+endif()
+
 project(node-based-image-processor)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Set vcpkg toolchain
-set(CMAKE_TOOLCHAIN_FILE "D:/vcpkg/scripts/buildsystems/vcpkg.cmake"
-    CACHE STRING "Vcpkg toolchain file")
+# Force Release mode unless explicitly set
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
 
-# Find OpenCV via vcpkg
-set(OpenCV_ROOT "D:/vcpkg/installed/x64-windows")
-find_package(OpenCV REQUIRED CONFIG)
+# Determine architecture
+if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+    set(ARCH_PATH "x64-windows")
+else()
+    set(ARCH_PATH "x86-windows")
+endif()
 
-# Add the main file
+# Check if OpenCV is installed
+message(STATUS "Checking for OpenCV in vcpkg...")
+if(EXISTS "D:/vcpkg/installed/${ARCH_PATH}/include/opencv2/opencv.hpp")
+    # Manually set OpenCV paths
+    set(OpenCV_INCLUDE_DIRS "D:/vcpkg/installed/${ARCH_PATH}/include")
+    
+    # Find all OpenCV libraries
+    file(GLOB OpenCV_LIBS "D:/vcpkg/installed/${ARCH_PATH}/lib/opencv_*.lib")
+    message(STATUS "Found OpenCV libraries: ${OpenCV_LIBS}")
+else()
+    message(FATAL_ERROR "OpenCV not found. Please install it with: vcpkg install opencv:${ARCH_PATH}")
+endif()
+
+# Manually set Protobuf paths
+set(PROTOBUF_INCLUDE_DIR "D:/vcpkg/installed/${ARCH_PATH}/include")
+set(PROTOBUF_LIBRARY "D:/vcpkg/installed/${ARCH_PATH}/lib/libprotobuf.lib")
+set(PROTOBUF_LITE_LIBRARY "D:/vcpkg/installed/${ARCH_PATH}/lib/libprotobuf-lite.lib")
+set(PROTOBUF_PROTOC_LIBRARY "D:/vcpkg/installed/${ARCH_PATH}/lib/libprotoc.lib")
+
+# Add executable and sources
 add_executable(node-based-image-processor
     src/main.cpp
     src/gui.cpp
 )
 
-set_target_properties(node-based-image-processor PROPERTIES
-    WIN32_EXECUTABLE TRUE
+# Link OpenCV and manually link Protobuf libs
+target_link_libraries(node-based-image-processor PRIVATE
+    ${OpenCV_LIBS}
+    ${PROTOBUF_LIBRARY}
+    ${PROTOBUF_LITE_LIBRARY}
+    ${PROTOBUF_PROTOC_LIBRARY}
+    d3d11
 )
 
-# Add ImGui files
+# ImGui setup
 set(IMGUI_DIR ${CMAKE_SOURCE_DIR}/libs/imgui)
 
 target_sources(node-based-image-processor PRIVATE
@@ -34,12 +68,14 @@ target_sources(node-based-image-processor PRIVATE
     ${IMGUI_DIR}/backends/imgui_impl_win32.cpp
 )
 
-# Include ImGui + OpenCV
 target_include_directories(node-based-image-processor PRIVATE
     ${IMGUI_DIR}
     ${IMGUI_DIR}/backends
     ${OpenCV_INCLUDE_DIRS}
+    ${PROTOBUF_INCLUDE_DIR}
 )
 
-# Link OpenCV libraries (ImGui has no external linking)
-target_link_libraries(node-based-image-processor PRIVATE ${OpenCV_LIBS} d3d11)
+# Set Windows-specific properties
+set_target_properties(node-based-image-processor PROPERTIES
+    WIN32_EXECUTABLE TRUE
+)

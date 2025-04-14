@@ -44,6 +44,8 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack4.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack4.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack4.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack2.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack2.h
@@ -152,16 +154,14 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/mmsyscom.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/nb30.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/rpc.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack8.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/rpcdce.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/rpcdcep.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/rpcnsi.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/rpcnterr.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/rpcasync.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack8.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/shellapi.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack1.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/winperf.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack8.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
@@ -199,7 +199,7 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/winsmcrd.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/winspool.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/prsht.h
-C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack8.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack4.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/ole2.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack8.h
@@ -234,6 +234,8 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/commdlg.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/prsht.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/pshpack1.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/poppack.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/shared/stralign.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/winsvc.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/um/mcx.h
