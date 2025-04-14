@@ -29,6 +29,8 @@ int g_imageWidth = 0, g_imageHeight = 0;
 bool show_grayscale = false;
 bool show_brightness = false;
 float brightness_value = 0.0f;
+bool show_contrast = false;
+float contrast_value = 1.0f;
 
 // Helper Functions
 void CreateRenderTarget() {
@@ -194,28 +196,33 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
         ImGui::Separator();
         ImGui::Checkbox("Apply Grayscale", &show_grayscale);
         ImGui::Checkbox("Apply Brightness", &show_brightness);
+        ImGui::Checkbox("Apply Contrast", &show_contrast);
 
         if (show_brightness) {
             ImGui::SliderFloat("Brightness", &brightness_value, -100.0f, 100.0f);
         }
 
+        if (show_contrast) {
+            ImGui::SliderFloat("Contrast", &contrast_value, 0.0f, 3.0f);
+        }
+
         // Chain processing
-        if (show_grayscale || show_brightness) {
+        if (show_grayscale || show_brightness || show_contrast) {
             cv::Mat current = original_image.clone();
 
             if (show_grayscale) {
                 cv::cvtColor(current, current, cv::COLOR_BGR2GRAY);
             }
 
-            if (show_brightness) {
-                current.convertTo(current, -1, 1, brightness_value);
+            if (show_brightness || show_contrast) {
+                current.convertTo(current, -1, contrast_value, brightness_value);
             }
 
             LoadImageToTexture(current, &g_processedTexture, g_imageWidth, g_imageHeight);
         }
 
         // Show image
-        if ((g_processedTexture && (show_grayscale || show_brightness))) {
+        if ((g_processedTexture && (show_grayscale || show_brightness || show_contrast))) {
             ImGui::Separator();
             ImGui::Text("Processed Image:");
             ImGui::Image((ImTextureID)g_processedTexture, ImVec2((float)g_imageWidth, (float)g_imageHeight));
