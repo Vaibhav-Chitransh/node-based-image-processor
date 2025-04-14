@@ -11,6 +11,8 @@
 #include <opencv2/opencv.hpp>
 #include <shobjidl.h> 
 #include <string>
+#include <vector>
+#include <algorithm>
 
 #pragma comment(lib, "d3d11.lib")
 
@@ -42,6 +44,15 @@ int lower_threshold = 100;
 int upper_threshold = 200;
 int kernel_size = 1;
 bool overlay_edges = false;
+
+// Threshold Node State
+bool show_threshold = false;
+int threshold_value = 127;
+int threshold_method = 0;  // 0: Binary, 1: Adaptive, 2: Otsu
+int block_size = 11;  // For adaptive threshold
+int constant = 2;     // For adaptive threshold
+bool show_histogram = false;
+std::vector<float> histogram_data(256, 0.0f);  // Store histogram as float
 
 // Function declarations
 bool LoadImageToTexture(const cv::Mat& image, ID3D11ShaderResourceView** out_texture, int& width, int& height);
@@ -75,14 +86,12 @@ std::wstring OpenFileDialog() {
                          IID_IFileOpenDialog, reinterpret_cast<void**>(&pFileOpen));
 
     if (SUCCEEDED(hr)) {
-        // Set file types
         COMDLG_FILTERSPEC fileTypes[] = {
             {L"Image Files", L"*.jpg;*.jpeg;*.png;*.bmp"},
             {L"All Files", L"*.*"}
         };
         pFileOpen->SetFileTypes(2, fileTypes);
 
-        // Show the dialog
         hr = pFileOpen->Show(NULL);
 
         if (SUCCEEDED(hr)) {
@@ -110,15 +119,10 @@ std::wstring OpenFileDialog() {
 
 bool LoadNewImage(const std::wstring& path) {
     if (path.empty()) return false;
-
-    // Convert wide string to string
     std::string pathStr(path.begin(), path.end());
-    
-    // Load the new image
     cv::Mat new_image = cv::imread(pathStr);
     if (new_image.empty()) return false;
 
-    // Clean up old textures
     if (g_texture) {
         g_texture->Release();
         g_texture = nullptr;
@@ -128,7 +132,6 @@ bool LoadNewImage(const std::wstring& path) {
         g_processedTexture = nullptr;
     }
 
-    // Update the original image and create new texture
     original_image = new_image;
     return LoadImageToTexture(original_image, &g_texture, g_imageWidth, g_imageHeight);
 }
@@ -261,7 +264,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
     ShowWindow(g_hWnd, SW_SHOWDEFAULT);
     UpdateWindow(g_hWnd);
 
-    // Setup ImGui
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
@@ -269,7 +271,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
     ImGui_ImplWin32_Init(g_hWnd);
     ImGui_ImplDX11_Init(g_pd3dDevice, g_pd3dDeviceContext);
 
-    // Main loop
     MSG msg;
     ZeroMemory(&msg, sizeof(msg));
     while (msg.message != WM_QUIT) {
@@ -292,7 +293,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
             }
         }
 
-        // Add status text to show if image is loaded
         if (original_image.empty()) {
             ImGui::TextColored(ImVec4(1.0f, 0.0f, 0.0f, 1.0f), "No image loaded!");
         } else {
@@ -305,6 +305,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
         ImGui::Checkbox("Apply Brightness", &show_brightness);
         ImGui::Checkbox("Apply Contrast", &show_contrast);
         ImGui::Checkbox("Apply Blur", &show_blur);
+        ImGui::Checkbox("Apply Threshold", &show_threshold);
         ImGui::Checkbox("Apply Edge Detection", &show_edge_detection);
 
         if (show_brightness) {
@@ -320,6 +321,47 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
             ImGui::Checkbox("Use Gaussian Blur", &use_gaussian);
         }
 
+        if (show_threshold) {
+            const char* methods[] = { "Binary", "Adaptive", "Otsu" };
+            ImGui::Combo("Threshold Method", &threshold_method, methods, IM_ARRAYSIZE(methods));
+
+            if (threshold_method == 0) {  // Binary
+                ImGui::SliderInt("Threshold Value", &threshold_value, 0, 255);
+            }
+            else if (threshold_method == 1) {  // Adaptive
+                ImGui::SliderInt("Block Size", &block_size, 3, 99, "%d");
+                if (block_size % 2 == 0) block_size++;  // Ensure odd number
+                ImGui::SliderInt("Constant", &constant, -10, 10);
+            }
+            
+            ImGui::Checkbox("Show Histogram", &show_histogram);
+            
+            if (show_histogram && !original_image.empty()) {
+                // Calculate histogram
+                std::fill(histogram_data.begin(), histogram_data.end(), 0.0f);
+                cv::Mat gray;
+                if (original_image.channels() == 3)
+                    cv::cvtColor(original_image, gray, cv::COLOR_BGR2GRAY);
+                else
+                    gray = original_image.clone();
+
+                for (int i = 0; i < gray.rows; i++) {
+                    for (int j = 0; j < gray.cols; j++) {
+                        histogram_data[gray.at<uchar>(i, j)]++;
+                    }
+                }
+
+                ImGui::PlotHistogram("##Histogram", 
+                    histogram_data.data(), 
+                    256, 
+                    0,
+                    "Image Histogram", 
+                    0.0f, 
+                    *std::max_element(histogram_data.begin(), histogram_data.end()), 
+                    ImVec2(300, 100));
+            }
+        }
+
         if (show_edge_detection) {
             ImGui::Checkbox("Use Canny Edge Detection", &use_canny);
             ImGui::SliderInt("Lower Threshold", &lower_threshold, 0, 255);
@@ -330,7 +372,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
         }
 
         // Chain processing
-        if (!original_image.empty() && (show_grayscale || show_brightness || show_contrast || show_blur || show_edge_detection)) {
+        if (!original_image.empty() && (show_grayscale || show_brightness || show_contrast || show_blur || show_threshold || show_edge_detection)) {
             cv::Mat current = original_image.clone();
 
             if (show_grayscale) {
@@ -348,6 +390,35 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
                 } else {
                     cv::blur(current, current, kernel_size);
                 }
+            }
+
+            if (show_threshold) {
+                cv::Mat gray;
+                if (current.channels() == 3)
+                    cv::cvtColor(current, gray, cv::COLOR_BGR2GRAY);
+                else
+                    gray = current.clone();
+
+                cv::Mat binary;
+                if (threshold_method == 0) {  // Binary
+                    cv::threshold(gray, binary, threshold_value, 255, cv::THRESH_BINARY);
+                }
+                else if (threshold_method == 1) {  // Adaptive
+                    cv::adaptiveThreshold(gray, binary,
+                        255,
+                        cv::ADAPTIVE_THRESH_GAUSSIAN_C,
+                        cv::THRESH_BINARY,
+                        block_size,
+                        constant);
+                }
+                else if (threshold_method == 2) {  // Otsu
+                    cv::threshold(gray, binary, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
+                }
+
+                if (current.channels() == 3)
+                    cv::cvtColor(binary, current, cv::COLOR_GRAY2BGR);
+                else
+                    current = binary;
             }
 
             if (show_edge_detection) {
@@ -399,7 +470,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
         float maxHeight = 600;  // Maximum height for display
 
         // Show image
-        if ((g_processedTexture && (show_grayscale || show_brightness || show_contrast || show_blur || show_edge_detection))) {
+        if ((g_processedTexture && (show_grayscale || show_brightness || show_contrast || show_blur || show_threshold || show_edge_detection))) {
             ImGui::Separator();
             ImGui::Text("Processed Image:");
             ImVec2 displaySize = CalculateDisplaySize(g_imageWidth, g_imageHeight, maxWidth, maxHeight);
