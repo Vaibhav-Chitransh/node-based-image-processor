@@ -50,6 +50,20 @@ void CleanupRenderTarget();
 void CleanupDeviceD3D();
 bool CreateDeviceD3D(HWND hWnd);
 
+// Helper function to calculate display size
+ImVec2 CalculateDisplaySize(int imgWidth, int imgHeight, float maxWidth, float maxHeight) {
+    float scale = 1.0f;
+    float aspectRatio = (float)imgWidth / imgHeight;
+    
+    if (imgWidth > maxWidth || imgHeight > maxHeight) {
+        float scaleX = maxWidth / imgWidth;
+        float scaleY = maxHeight / imgHeight;
+        scale = std::min(scaleX, scaleY);
+    }
+    
+    return ImVec2(imgWidth * scale, imgHeight * scale);
+}
+
 // Helper Functions
 std::wstring OpenFileDialog() {
     HRESULT hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
@@ -340,10 +354,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
                 cv::Mat edges;
                 cv::Mat gray;
                 
-                // Ensure kernel size is odd
                 int adjusted_kernel_size = kernel_size * 2 - 1;
                 
-                // Convert to grayscale for edge detection
                 if (current.channels() == 3) {
                     cv::cvtColor(current, gray, cv::COLOR_BGR2GRAY);
                 } else {
@@ -351,11 +363,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
                 }
 
                 if (use_canny) {
-                    // Apply Gaussian blur before Canny
                     cv::GaussianBlur(gray, gray, cv::Size(adjusted_kernel_size, adjusted_kernel_size), 0);
                     cv::Canny(gray, edges, lower_threshold, upper_threshold);
                 } else {
-                    // Sobel edge detection
                     cv::Mat grad_x, grad_y;
                     cv::Mat abs_grad_x, abs_grad_y;
                     
@@ -383,15 +393,22 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
             LoadImageToTexture(current, &g_processedTexture, g_imageWidth, g_imageHeight);
         }
 
+        // Calculate available space for image display
+        ImVec2 contentRegion = ImGui::GetContentRegionAvail();
+        float maxWidth = contentRegion.x - 20;  // Subtract some padding
+        float maxHeight = 600;  // Maximum height for display
+
         // Show image
         if ((g_processedTexture && (show_grayscale || show_brightness || show_contrast || show_blur || show_edge_detection))) {
             ImGui::Separator();
             ImGui::Text("Processed Image:");
-            ImGui::Image((ImTextureID)g_processedTexture, ImVec2((float)g_imageWidth, (float)g_imageHeight));
+            ImVec2 displaySize = CalculateDisplaySize(g_imageWidth, g_imageHeight, maxWidth, maxHeight);
+            ImGui::Image((ImTextureID)g_processedTexture, displaySize);
         } else if (g_texture) {
             ImGui::Separator();
             ImGui::Text("Original Image:");
-            ImGui::Image((ImTextureID)g_texture, ImVec2((float)g_imageWidth, (float)g_imageHeight));
+            ImVec2 displaySize = CalculateDisplaySize(g_imageWidth, g_imageHeight, maxWidth, maxHeight);
+            ImGui::Image((ImTextureID)g_texture, displaySize);
         }
 
         ImGui::End();
