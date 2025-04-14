@@ -109,8 +109,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-g0xipq"
-      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-g0xipq"
+      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-qrx4pm"
+      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-qrx4pm"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -123,28 +123,28 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-g0xipq'
+        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-qrx4pm'
         
-        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_736a4\\fast
-        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_736a4.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_736a4.dir\\build
-        Building C object CMakeFiles/cmTC_736a4.dir/CMakeCCompilerABI.c.obj
-        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_736a4.dir\\CMakeCCompilerABI.c.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g0xipq" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmC4F2.tmp
+        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_783e9\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_783e9.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_783e9.dir\\build
+        Building C object CMakeFiles/cmTC_783e9.dir/CMakeCCompilerABI.c.obj
+        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_783e9.dir\\CMakeCCompilerABI.c.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qrx4pm" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmB7B6.tmp
         CMakeCCompilerABI.c
-        Linking C executable cmTC_736a4.exe
-        	D:\\Softwares\\bin\\cmake.exe -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_736a4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_736a4.dir\\objects1.rsp @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmC570.tmp
+        Linking C executable cmTC_783e9.exe
+        	D:\\Softwares\\bin\\cmake.exe -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_783e9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_783e9.dir\\objects1.rsp @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmB825.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_736a4.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_736a4.dir/embed.manifest
+        Create CMakeFiles\\cmTC_783e9.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_783e9.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_736a4.dir/manifest.res CMakeFiles\\cmTC_736a4.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_783e9.dir/manifest.res CMakeFiles\\cmTC_783e9.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_736a4.dir\\objects1.rsp /out:cmTC_736a4.exe /implib:cmTC_736a4.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g0xipq\\cmTC_736a4.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_736a4.dir/intermediate.manifest CMakeFiles\\cmTC_736a4.dir/manifest.res
+        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_783e9.dir\\objects1.rsp /out:cmTC_783e9.exe /implib:cmTC_783e9.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qrx4pm\\cmTC_783e9.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_783e9.dir/intermediate.manifest CMakeFiles\\cmTC_783e9.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_736a4.dir/intermediate.manifest /out:CMakeFiles\\cmTC_736a4.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_783e9.dir/intermediate.manifest /out:CMakeFiles\\cmTC_783e9.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_736a4.dir/manifest.res CMakeFiles\\cmTC_736a4.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_783e9.dir/manifest.res CMakeFiles\\cmTC_783e9.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_736a4.dir\\objects1.rsp /out:cmTC_736a4.exe /implib:cmTC_736a4.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g0xipq\\cmTC_736a4.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_736a4.dir/intermediate.manifest CMakeFiles\\cmTC_736a4.dir/manifest.res
+        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_783e9.dir\\objects1.rsp /out:cmTC_783e9.exe /implib:cmTC_783e9.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qrx4pm\\cmTC_783e9.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_783e9.dir/intermediate.manifest CMakeFiles\\cmTC_783e9.dir/manifest.res
         
       exitCode: 0
   -
@@ -184,8 +184,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-7vj8sw"
-      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-7vj8sw"
+      source: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-1w5lif"
+      binary: "D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-1w5lif"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -199,28 +199,28 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-7vj8sw'
+        Change Dir: 'D:/Github Repos/node-based-image-processor/build/CMakeFiles/CMakeScratch/TryCompile-1w5lif'
         
-        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_9f9b1\\fast
-        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_9f9b1.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_9f9b1.dir\\build
-        Building CXX object CMakeFiles/cmTC_9f9b1.dir/CMakeCXXCompilerABI.cpp.obj
-        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_9f9b1.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7vj8sw" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmC86C.tmp
+        Run Build Command(s): D:/Softwares/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_58790\\fast
+        	"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_58790.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_58790.dir\\build
+        Building CXX object CMakeFiles/cmTC_58790.dir/CMakeCXXCompilerABI.cpp.obj
+        	D:\\Softwares\\bin\\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_58790.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1w5lif" --filter-prefix="Note: including file: " -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmBAF3.tmp
         CMakeCXXCompilerABI.cpp
-        Linking CXX executable cmTC_9f9b1.exe
-        	D:\\Softwares\\bin\\cmake.exe -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_9f9b1.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_9f9b1.dir\\objects1.rsp @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmC8DB.tmp
+        Linking CXX executable cmTC_58790.exe
+        	D:\\Softwares\\bin\\cmake.exe -E vs_link_exe --msvc-ver=1929 --intdir=CMakeFiles\\cmTC_58790.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_58790.dir\\objects1.rsp @C:\\Users\\Vaibhav\\AppData\\Local\\Temp\\nmBB61.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_9f9b1.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_9f9b1.dir/embed.manifest
+        Create CMakeFiles\\cmTC_58790.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_58790.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_9f9b1.dir/manifest.res CMakeFiles\\cmTC_9f9b1.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_58790.dir/manifest.res CMakeFiles\\cmTC_58790.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_9f9b1.dir\\objects1.rsp /out:cmTC_9f9b1.exe /implib:cmTC_9f9b1.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7vj8sw\\cmTC_9f9b1.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_9f9b1.dir/intermediate.manifest CMakeFiles\\cmTC_9f9b1.dir/manifest.res
+        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_58790.dir\\objects1.rsp /out:cmTC_58790.exe /implib:cmTC_58790.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1w5lif\\cmTC_58790.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_58790.dir/intermediate.manifest CMakeFiles\\cmTC_58790.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_9f9b1.dir/intermediate.manifest /out:CMakeFiles\\cmTC_9f9b1.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_58790.dir/intermediate.manifest /out:CMakeFiles\\cmTC_58790.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_9f9b1.dir/manifest.res CMakeFiles\\cmTC_9f9b1.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_58790.dir/manifest.res CMakeFiles\\cmTC_58790.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_9f9b1.dir\\objects1.rsp /out:cmTC_9f9b1.exe /implib:cmTC_9f9b1.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7vj8sw\\cmTC_9f9b1.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_9f9b1.dir/intermediate.manifest CMakeFiles\\cmTC_9f9b1.dir/manifest.res
+        C:\\PROGRA~2\\MICROS~3\\2019\\BUILDT~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_58790.dir\\objects1.rsp /out:cmTC_58790.exe /implib:cmTC_58790.lib /pdb:D:\\Github Repos\\node-based-image-processor\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1w5lif\\cmTC_58790.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_58790.dir/intermediate.manifest CMakeFiles\\cmTC_58790.dir/manifest.res
         
       exitCode: 0
   -

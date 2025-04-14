@@ -31,6 +31,17 @@ bool show_brightness = false;
 float brightness_value = 0.0f;
 bool show_contrast = false;
 float contrast_value = 1.0f;
+// Add blur states
+bool show_blur = false;
+int blur_radius = 1;
+bool use_gaussian = true;
+// Add edge detection states
+bool show_edge_detection = false;
+bool use_canny = true;  // true for Canny, false for Sobel
+int lower_threshold = 100;
+int upper_threshold = 200;
+int kernel_size = 1;
+bool overlay_edges = false;
 
 // Helper Functions
 void CreateRenderTarget() {
@@ -197,6 +208,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
         ImGui::Checkbox("Apply Grayscale", &show_grayscale);
         ImGui::Checkbox("Apply Brightness", &show_brightness);
         ImGui::Checkbox("Apply Contrast", &show_contrast);
+        ImGui::Checkbox("Apply Blur", &show_blur);
+        ImGui::Checkbox("Apply Edge Detection", &show_edge_detection);
 
         if (show_brightness) {
             ImGui::SliderFloat("Brightness", &brightness_value, -100.0f, 100.0f);
@@ -206,8 +219,22 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
             ImGui::SliderFloat("Contrast", &contrast_value, 0.0f, 3.0f);
         }
 
+        if (show_blur) {
+            ImGui::SliderInt("Blur Radius", &blur_radius, 1, 20);
+            ImGui::Checkbox("Use Gaussian Blur", &use_gaussian);
+        }
+
+        if (show_edge_detection) {
+            ImGui::Checkbox("Use Canny Edge Detection", &use_canny);
+            ImGui::SliderInt("Lower Threshold", &lower_threshold, 0, 255);
+            ImGui::SliderInt("Upper Threshold", &upper_threshold, 0, 255);
+            ImGui::SliderInt("Kernel Size", &kernel_size, 1, 4, "%d");
+            ImGui::Text("Actual Kernel Size: %dx%d", kernel_size * 2 - 1, kernel_size * 2 - 1);
+            ImGui::Checkbox("Overlay on Original", &overlay_edges);
+        }
+
         // Chain processing
-        if (show_grayscale || show_brightness || show_contrast) {
+        if (show_grayscale || show_brightness || show_contrast || show_blur || show_edge_detection) {
             cv::Mat current = original_image.clone();
 
             if (show_grayscale) {
@@ -218,11 +245,75 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
                 current.convertTo(current, -1, contrast_value, brightness_value);
             }
 
+            if (show_blur) {
+                cv::Size kernel_size(2 * blur_radius + 1, 2 * blur_radius + 1);
+                if (use_gaussian) {
+                    cv::GaussianBlur(current, current, kernel_size, 0);
+                } else {
+                    cv::blur(current, current, kernel_size);
+                }
+            }
+
+            if (show_edge_detection) {
+                cv::Mat edges;
+                cv::Mat gray;
+                
+                // Ensure kernel size is odd
+                int adjusted_kernel_size = kernel_size * 2 - 1;  // This will convert 3->5, 4->7, 5->9 etc.
+                
+                // Convert to grayscale for edge detection
+                if (current.channels() == 3) {
+                    cv::cvtColor(current, gray, cv::COLOR_BGR2GRAY);
+                } else {
+                    gray = current.clone();
+                }
+
+                if (use_canny) {
+                    // Apply Gaussian blur before Canny (common practice)
+                    cv::GaussianBlur(gray, gray, cv::Size(adjusted_kernel_size, adjusted_kernel_size), 0);
+                    // Canny edge detection
+                    cv::Canny(gray, edges, lower_threshold, upper_threshold);
+                } else {
+                    // Sobel edge detection
+                    cv::Mat grad_x, grad_y;
+                    cv::Mat abs_grad_x, abs_grad_y;
+                    
+                    // Ensure kernel size is valid for Sobel
+                    cv::Sobel(gray, grad_x, CV_16S, 1, 0, adjusted_kernel_size);
+                    cv::Sobel(gray, grad_y, CV_16S, 0, 1, adjusted_kernel_size);
+                    
+                    cv::convertScaleAbs(grad_x, abs_grad_x);
+                    cv::convertScaleAbs(grad_y, abs_grad_y);
+                    
+                    // Combine the gradients
+                    cv::addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 0, edges);
+                    
+                    // Apply thresholding to make edges more visible
+                    cv::threshold(edges, edges, lower_threshold, 255, cv::THRESH_BINARY);
+                }
+
+                if (overlay_edges) {
+                    // Convert edges to BGR for overlay
+                    cv::Mat edges_bgr;
+                    cv::cvtColor(edges, edges_bgr, cv::COLOR_GRAY2BGR);
+                    
+                    // Create overlay with red edges
+                    cv::Mat overlay = current.clone();
+                    overlay.setTo(cv::Scalar(0, 0, 255), edges);
+                    
+                    // Blend with original
+                    cv::addWeighted(current, 0.7, overlay, 0.3, 0, current);
+                } else {
+                    // If not overlaying, just show the edges
+                    cv::cvtColor(edges, current, cv::COLOR_GRAY2BGR);
+                }
+            }
+
             LoadImageToTexture(current, &g_processedTexture, g_imageWidth, g_imageHeight);
         }
 
         // Show image
-        if ((g_processedTexture && (show_grayscale || show_brightness || show_contrast))) {
+        if ((g_processedTexture && (show_grayscale || show_brightness || show_contrast || show_blur || show_edge_detection))) {
             ImGui::Separator();
             ImGui::Text("Processed Image:");
             ImGui::Image((ImTextureID)g_processedTexture, ImVec2((float)g_imageWidth, (float)g_imageHeight));
