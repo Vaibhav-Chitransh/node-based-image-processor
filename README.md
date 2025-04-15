@@ -15,6 +15,10 @@ A lightweight image processing application using **Dear ImGui** and **OpenCV**, 
 
 ---
 
+
+🎥 [Watch the demo video](https://drive.google.com/file/d/1jUxPd7IHjQ-qSEHjyLjWeM6_7OJMk4S9/view?usp=sharing)
+
+
 ## 📸 Screenshot
 
 ![App UI](./assets/loaded_image.png)
