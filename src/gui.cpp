@@ -117,6 +117,66 @@ std::wstring OpenFileDialog() {
     return L"";
 }
 
+std::wstring SaveFileDialog() {
+    HRESULT hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
+    if (FAILED(hr))
+        return L"";
+
+    IFileSaveDialog *pFileSave;
+    hr = CoCreateInstance(CLSID_FileSaveDialog, NULL, CLSCTX_ALL, 
+                         IID_IFileSaveDialog, reinterpret_cast<void**>(&pFileSave));
+
+    if (SUCCEEDED(hr)) {
+        COMDLG_FILTERSPEC fileTypes[] = {
+            {L"PNG Image", L"*.png"},
+            {L"JPEG Image", L"*.jpg"},
+            {L"BMP Image", L"*.bmp"}
+        };
+        pFileSave->SetFileTypes(3, fileTypes);
+        pFileSave->SetDefaultExtension(L"png");
+
+        hr = pFileSave->Show(NULL);
+
+        if (SUCCEEDED(hr)) {
+            IShellItem *pItem;
+            hr = pFileSave->GetResult(&pItem);
+            if (SUCCEEDED(hr)) {
+                PWSTR filePath;
+                hr = pItem->GetDisplayName(SIGDN_FILESYSPATH, &filePath);
+                if (SUCCEEDED(hr)) {
+                    std::wstring path(filePath);
+                    CoTaskMemFree(filePath);
+                    pItem->Release();
+                    pFileSave->Release();
+                    CoUninitialize();
+                    return path;
+                }
+                pItem->Release();
+            }
+        }
+        pFileSave->Release();
+    }
+    CoUninitialize();
+    return L"";
+}
+
+bool SaveImage(const cv::Mat& image, const std::wstring& path) {
+    if (image.empty() || path.empty()) return false;
+    
+    std::string pathStr(path.begin(), path.end());
+    cv::Mat saveImage;
+    
+    // Convert to BGR format for saving
+    if (image.channels() == 1)
+        cv::cvtColor(image, saveImage, cv::COLOR_GRAY2BGR);
+    else if (image.channels() == 4)
+        cv::cvtColor(image, saveImage, cv::COLOR_RGBA2BGR);
+    else
+        saveImage = image.clone();
+
+    return cv::imwrite(pathStr, saveImage);
+}
+
 bool LoadNewImage(const std::wstring& path) {
     if (path.empty()) return false;
     std::string pathStr(path.begin(), path.end());
@@ -292,6 +352,106 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int) {
                 LoadNewImage(filePath);
             }
         }
+
+        ImGui::SameLine();
+if (ImGui::Button("Save Image")) {
+    if (!original_image.empty()) {
+        std::wstring savePath = SaveFileDialog();
+        if (!savePath.empty()) {
+            cv::Mat imageToSave;
+            
+            // Save the processed image if any processing is active
+            if (g_processedTexture && (show_grayscale || show_brightness || show_contrast || 
+                show_blur || show_threshold || show_edge_detection)) {
+                
+                imageToSave = original_image.clone();
+                
+                // Apply all active processing steps
+                if (show_grayscale) {
+                    cv::cvtColor(imageToSave, imageToSave, cv::COLOR_BGR2GRAY);
+                }
+                
+                if (show_brightness || show_contrast) {
+                    imageToSave.convertTo(imageToSave, -1, contrast_value, brightness_value);
+                }
+                
+                if (show_blur) {
+                    cv::Size kernel_size(2 * blur_radius + 1, 2 * blur_radius + 1);
+                    if (use_gaussian) {
+                        cv::GaussianBlur(imageToSave, imageToSave, kernel_size, 0);
+                    } else {
+                        cv::blur(imageToSave, imageToSave, kernel_size);
+                    }
+                }
+                
+                if (show_threshold) {
+                    cv::Mat gray;
+                    if (imageToSave.channels() == 3)
+                        cv::cvtColor(imageToSave, gray, cv::COLOR_BGR2GRAY);
+                    else
+                        gray = imageToSave.clone();
+
+                    cv::Mat binary;
+                    if (threshold_method == 0) {
+                        cv::threshold(gray, binary, threshold_value, 255, cv::THRESH_BINARY);
+                    }
+                    else if (threshold_method == 1) {
+                        cv::adaptiveThreshold(gray, binary, 255,
+                            cv::ADAPTIVE_THRESH_GAUSSIAN_C,
+                            cv::THRESH_BINARY,
+                            block_size,
+                            constant);
+                    }
+                    else if (threshold_method == 2) {
+                        cv::threshold(gray, binary, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
+                    }
+                    imageToSave = binary;
+                }
+                
+                if (show_edge_detection) {
+                    cv::Mat edges;
+                    cv::Mat gray;
+                    if (imageToSave.channels() == 3) {
+                        cv::cvtColor(imageToSave, gray, cv::COLOR_BGR2GRAY);
+                    } else {
+                        gray = imageToSave.clone();
+                    }
+                    
+                    int adjusted_kernel_size = kernel_size * 2 - 1;
+                    
+                    if (use_canny) {
+                        cv::GaussianBlur(gray, gray, cv::Size(adjusted_kernel_size, adjusted_kernel_size), 0);
+                        cv::Canny(gray, edges, lower_threshold, upper_threshold);
+                    } else {
+                        cv::Mat grad_x, grad_y;
+                        cv::Sobel(gray, grad_x, CV_16S, 1, 0, adjusted_kernel_size);
+                        cv::Sobel(gray, grad_y, CV_16S, 0, 1, adjusted_kernel_size);
+                        cv::convertScaleAbs(grad_x, grad_x);
+                        cv::convertScaleAbs(grad_y, grad_y);
+                        cv::addWeighted(grad_x, 0.5, grad_y, 0.5, 0, edges);
+                    }
+                    
+                    if (overlay_edges) {
+                        cv::Mat edges_bgr;
+                        cv::cvtColor(edges, edges_bgr, cv::COLOR_GRAY2BGR);
+                        cv::addWeighted(imageToSave, 0.7, edges_bgr, 0.3, 0, imageToSave);
+                    } else {
+                        imageToSave = edges;
+                    }
+                }
+            } else {
+                // Save the original image if no processing is active
+                imageToSave = original_image;
+            }
+            
+            if (SaveImage(imageToSave, savePath)) {
+                MessageBoxW(NULL, L"Image saved successfully!", L"Success", MB_OK | MB_ICONINFORMATION);
+            } else {
+                MessageBoxW(NULL, L"Failed to save image!", L"Error", MB_OK | MB_ICONERROR);
+            }
+        }
+    }
+}
 
         if (original_image.empty()) {
             ImGui::TextColored(ImVec4(1.0f, 0.0f, 0.0f, 1.0f), "No image loaded!");
